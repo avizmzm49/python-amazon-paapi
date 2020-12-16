@@ -1,0 +1,8 @@
+#%%  import fils
+! pip install python-amazon-paapi --upgrade
+# %%
+from amazon.paapi import AmazonAPI
+# amazon = AmazonAPI(KEY, SECRET, TAG, COUNTRY)
+product = amazon.get_product('B01N5IB20Q')
+print(product.title)
+# %%
